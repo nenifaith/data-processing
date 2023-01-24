@@ -1,0 +1,16 @@
+//alert(" hello from data-processing!");
+
+const queryString = window.location.search;
+console.log(queryString);
+
+const urlParams = new URLSearchParams(queryString);
+//key = key.split("_").join(" ");
+
+// Log the value
+urlParams.forEach(function(value, key) {
+    key = key.split("_").join(" ");
+  console.log(key, value);
+});
+if(quaryString.length>0){
+    document.getElementById("output").innerHTML = "Info on String"
+}
