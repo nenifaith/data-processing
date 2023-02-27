@@ -45,7 +45,7 @@ urlParams.forEach(function(value, key) {
     if(key == "First Name"|| key == "Last Name"){
         value = titleCase(value);
     }
-    myData += '<p>${key}: ${value}</p>';
+    myData += `<p>${key}: ${value}</p>`;
   }
 
 });
